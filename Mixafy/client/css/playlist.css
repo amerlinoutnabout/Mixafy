@@ -1,0 +1,21 @@
+body {
+  background-image: url("../images/Untitled\ design\ \(10\).jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.button {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+h4  {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+iframe {
+    padding: 10px;
+    filter: blur(.6px);
+}

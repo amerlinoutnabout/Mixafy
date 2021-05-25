@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/playlist.css">
+</head>
+<body>
+    <div class="container">
+        <div class="button">
+            <span>
+                <a class="btn btn-outline-info" href="../" role="button" type="submit" value="Submit">BACK</a>
+                <a class="btn btn-outline-info" href="../songlist" role="button">Full Song List</a>
+                <a class="btn btn-outline-info" role="button" onClick="window.location.reload();">Shuffle</a>
+            </span>
+        </div>
+
+        <section>
+            <h4>Playlist</h4>
+            <form action="../../server.js" method="POST" id="playlist_generator">
+                ${data.map(song => {
+                    return `<iframe src="${song.embed_link}" width="250" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`
+                }).join('')}
+            </form>
+        </section>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

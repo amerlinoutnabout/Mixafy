@@ -1,0 +1,35 @@
+body {
+  background-image: url("../images/2616635.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  filter: blur(.6px);
+}
+
+.container {
+    margin-top: 15px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #3B77AC;
+}
+
+a {
+  color: #3F3189;  
+}
+
+.card {
+    display: flex;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #daf6f88e;
+}

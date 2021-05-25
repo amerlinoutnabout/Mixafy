@@ -1,0 +1,43 @@
+{
+  "name": "Mixafy",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.16.0"
+  },
+  "description": "spotify playlist generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCaressimo/Mixafy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CCaressimo/Mixafy/issues"
+  },
+  "homepage": "https://github.com/CCaressimo/Mixafy#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-es6-template-engine": "^2.2.3",
+    "got": "^11.8.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2",
+    "tape": "^5.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Songs</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/songs.css">
+    </head>
+    <body>
+        <div class="container" id="header">
+            <span>
+                <div class="button">
+                    <a class="btn btn-outline-info" href="../" role="button" type="submit" value="Submit">BACK</a>
+                </div>
+                <h1>MIXAFY LIST</h1>  
+                <h3>- songs are hyperlinked</h3>         
+            </span>
+        </div>
+
+        ${data.map(list => {
+            return `<br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card-header">
+                                        <h3>${list.artist}</h3>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card-header">
+                                        <h3><a href="${list.shared_link}">${list.song}</a></h3>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card-header">
+                                        <h3>${list.genre_id}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>            
+                    <br>`
+        }).join('')}
+    </body>
+</html>
+
